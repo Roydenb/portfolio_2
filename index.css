@@ -31,7 +31,7 @@
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background: red;
+    background: #22333B;
     color: #666;
   }
   
@@ -89,7 +89,7 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 2rem;
-    color: red;
+    color: #5E503F;
     width: fit-content;
   }
 
@@ -124,7 +124,7 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 0.2rem;
-    color: red;
+    color: #5E503F;
     width: fit-content;
   }
   .cv-content-item .time {
@@ -133,7 +133,7 @@
     font-weight: 500;
     line-height: normal;
     margin-bottom: 0.4rem;
-    color: #b2b2b2;
+    color: #A9927D;
     width: fit-content;
   }
   .cv-content-item .exprecince {
@@ -183,7 +183,7 @@
     font-size: 1.1rem;
     font-weight: 500;
     line-height: normal;
-    color: #686868;
+    color: #A9927D;
     width: fit-content;
     text-decoration: none;
   }
@@ -199,7 +199,7 @@
     font-weight: 200;
     line-height: normal;
     margin-bottom: 0.5rem;
-    color: #434343;
+    color: #A9927D;
     width: fit-content;
   }
   .cv-skills .title {
@@ -208,7 +208,7 @@
     font-weight: 200;
     line-height: normal;
     margin-bottom: 0.5rem;
-    color: red;
+    color: #5E503F;
     width: fit-content;
   }
   .cv-social {
