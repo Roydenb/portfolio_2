@@ -54,17 +54,17 @@
     position: absolute;
     bottom: 15px;
     left: 15px;
-    color: #000000;
-    font-size: 30px;
+    color: red;
+    font-size: 10px;
   }
   
   /* Closable button inside the expanded image */
   .closebtn {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
+    top: 15px;
+    right: 48px;
+    color: red;
+    font-size: 150px;
     cursor: pointer;
   }
 </style>
@@ -72,42 +72,52 @@
 <body class="w3-white">
 
 <!-- Top ribbon --> 
-<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+<header class="w3-container w3-top w3-white w3-large w3-padding-16">
   <span class="w3-left w3-padding"><a href="index.html"> 🔙 </a>SOME OF | MY DRAWINGS | POSTERS 
-    <p>When selecting one of the images below. It will expand the selected image.</p>
   </span>
+
 </header>
   
     
     <!-- The four columns -->
     <div class="row">
       <div class="column">
-        <img src="images/art(1).jpg" alt="A DRAWING OF ME" style="width:100%" onclick="myFunction(this);">
+        <img src="gallery/IMG_20190313_115724.jpg" 
+        alt="SKETCH OF MYSELF" style="width:100%" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="gallery/Amber 20190301_205954.jpg" alt="A PORTRAIT I DID OF A FRIEND" style="width:100%" onclick="myFunction(this);">
+        <img src="gallery/1609623667782.png" alt="SKETCH" style="width:100%" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="gallery/gesture.png" alt="A SKETCH OF SOMEONE I USE TO DANCE WITH" style="width:100%" onclick="myFunction(this);">
+        <img src="gallery/1609588119759.png" alt="SKETCH" style="width:100%" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="gallery/clown.png" alt="A SKETCH I DID TO PRACTICE PORTRAIT DRAWING" style="width:100%" onclick="myFunction(this);">
+        <img src="gallery/1609343208527.png" alt="SKETCH" style="width:100%" onclick="myFunction(this);">
       </div>
     </div>
 
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+    
+    <!-- SECOND ROW -->
     <div class="row">
       <div class="column">
-        <img src="gallery/IMG_20190313_115724.jpg" alt="ANOTHER DRAWING OF MYSELF. THIS WAS ONE OF 
-        THE REQUIREMENTS I HAD TO MEET APPLYING AT FRIENDS OF DESIGN" style="width:100%" onclick="myFunction(this);">
+        <img src="images/art(1).jpg" alt="A DRAWING OF ME" style="width:100%" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="gallery/1609623667782.png" alt="SOMETHING A DREW" style="width:100%" onclick="myFunction(this);">
+        <img src="gallery/moon.png" alt="WOLF SKETCH" style="width:100%" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="gallery/1609588119759.png" alt="DRAWING OF A DODGE CHARGER" style="width:100%" onclick="myFunction(this);">
+        <img src="gallery/gesture.png" alt="GETURE SKETCH" style="width:100%" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img src="gallery/1609343208527.png" alt="DRAWING OF A WOLF, OWL AND THE NIGHT SKIES" style="width:100%" onclick="myFunction(this);">
+        <img src="gallery/clown.png" alt="PRACTICE SKETCH" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/soldier.png" alt="A SKETCH OF MYSELF" style="width:100%" onclick="myFunction(this);">
       </div>
     </div>
     
@@ -116,10 +126,51 @@
       <img id="expandedImg" style="width:100%">
       <div id="imgtext"></div>
     </div>
-    
-    <center><h2><b>HAVE A LOOK AT SOME OF MY VIDEOS</b></h2>
+
+    <!-- THIRD ROW-->
+    <div class="row">
+      <div class="column">
+        <img src="gallery/Fading.jpg" 
+        alt="POSTER" style="width:100%" onclick="myFunction(this);">
+      </div>
+      
+      <div class="column">
+        <img src="gallery/Royden MAGAZINE.jpg" alt="MAGAZINE COVER" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+
+    <!-- FORTH ROW -->
+    <div class="row">
+      <div class="column">
+        <img src="gallery/Allenjoy-photography-theme-background-White-deep-stars-universe-night-sky-moon-children-natural-child-photos-camera.jpg" 
+        alt="A POSTER" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/Sisandbro.jpg" alt="A LOGO DESIGN" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/light_bulb_by_vvolny_d1s0ob2-pre.jpg" alt="A QUOTE" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/car-drawing.jpg" alt="CAR IN A ENVIROMENT SKETCH" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+
+    <center>
       <a href="video.html" target="_">
-        <button class="w3-container w3-padding-50 w3-center w3-opacity w3-large">
+        <button class="w3-container w3-padding-10 w3-margin w3-center w3-opacity w3-medium">
        <i class="fa fa-play"></i> | Videos
         </button>
       </a>
