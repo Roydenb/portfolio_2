@@ -6,78 +6,134 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/gall.css">
-
+<head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-top: 100px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 2;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+    
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #000000;
+    font-size: 30px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+</style>
+</head>
 <body class="w3-white">
 
 <!-- Top ribbon --> 
 <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding"><a href="index.html"> 🔙 </a>SOME OF | MY DRAWINGS | POSTERS </span>
+  <span class="w3-left w3-padding"><a href="index.html"> 🔙 </a>SOME OF | MY DRAWINGS | POSTERS 
+    <p>When selecting one of the images below. It will expand the selected image.</p>
+  </span>
 </header>
-
-<!-- !PAGE CONTENT!-->
-<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
   
-  <!-- Photo grid -->
-  <div class="w3-row w3-grayscale-min">
-    <div class="w3-quarter">
-      <img src="gallery/1.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/Amber 20190301_205954.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/light_bulb_by_vvolny_d1s0ob2-pre.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/Fading.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/roy5.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/gesture.png" style="width:100%" onclick="onClick(this)">
     
-   </div>
-    
-   <div class="w3-quarter">
-      <img src="gallery/car-drawing.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/1609588119759.png" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/Me.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/Royden MAGAZINE.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/soldier.png" style="width:100%" onclick="onClick(this)">
-    
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="gallery/IMG_20190313_115724.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/1609343208527.png" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/Sisandbro.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/Allenjoy-photography-theme-background-White-deep-stars-universe-night-sky-moon-children-natural-child-photos-camera.jpg" style="width:100%" onclick="onClick(this)">
-
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <img src="images/art(1).jpg" alt="A DRAWING OF ME" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/Amber 20190301_205954.jpg" alt="A PORTRAIT I DID OF A FRIEND" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/gesture.png" alt="A SKETCH OF SOMEONE I USE TO DANCE WITH" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/clown.png" alt="A SKETCH I DID TO PRACTICE PORTRAIT DRAWING" style="width:100%" onclick="myFunction(this);">
+      </div>
     </div>
 
-    <div class="w3-quarter">
-      <img src="gallery/1609623667782.png" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/art(1).jpg" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/clown.png" style="width:100%" onclick="onClick(this)">
-      <img src="gallery/moon.png" style="width:100%" onclick="onClick(this)">
-
+    <div class="row">
+      <div class="column">
+        <img src="gallery/IMG_20190313_115724.jpg" alt="ANOTHER DRAWING OF MYSELF. THIS WAS ONE OF 
+        THE REQUIREMENTS I HAD TO MEET APPLYING AT FRIENDS OF DESIGN" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/1609623667782.png" alt="SOMETHING A DREW" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/1609588119759.png" alt="DRAWING OF A DODGE CHARGER" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="gallery/1609343208527.png" alt="DRAWING OF A WOLF, OWL AND THE NIGHT SKIES" style="width:100%" onclick="myFunction(this);">
+      </div>
     </div>
-  </div>
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
+    
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
     </div>
-  </div>
-
-  <hr>
-
-  <center><h2><b>HAVE A LOOK AT SOME OF MY VIDEOS</b></h2>
-    <a href="video.html" target="_">
-      <button class="w3-container w3-padding-50 w3-center w3-opacity w3-large">
-     <i class="fa fa-play"></i> | Videos
-      </button>
-    </a>
-  </center>
-
-  <br>
-
-  <br>
+    
+    <center><h2><b>HAVE A LOOK AT SOME OF MY VIDEOS</b></h2>
+      <a href="video.html" target="_">
+        <button class="w3-container w3-padding-50 w3-center w3-opacity w3-large">
+       <i class="fa fa-play"></i> | Videos
+        </button>
+      </a>
+    </center>
+    
+    <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
 
 </body>
 </html>
