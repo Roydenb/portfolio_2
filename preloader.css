@@ -1,12 +1,12 @@
 /* Div to cover page and hide content */
-/* .preloader {
-    position: absolute;
+.preloader {
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100vh;
-    background-color: #000000;
+    background-color: black;
     animation: disappear 5s linear forwards;
     display: flex;
     justify-content: center;
@@ -23,12 +23,12 @@
       opacity: 0;
       z-index: -1;
     }
-  } */
+  } 
   
   /* Spinner */
-  /* .loader {
-    border: 16px solid #372554;
-    border-top: 16px solid #52528C;
+  .loader {
+    border: 16px solid grey;
+    border-top: 16px solid black;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -42,7 +42,4 @@
     100% {
       transform: rotate(360deg);
     }
-  } */
-  
-
-  
+  } 
