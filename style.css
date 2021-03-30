@@ -4,6 +4,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('images/Royden\ Botha\ \(1\).JPG');
+  background-image: url('./images/Royden\ Botha\ \(1\)-min.JPG');
   min-height: 100%;
 }
