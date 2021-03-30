@@ -7,7 +7,7 @@
     right: 0;
     height: 100vh;
     background-color: black;
-    animation: disappear 5s linear forwards;
+    animation: disappear 9s linear forwards;
     display: flex;
     justify-content: center;
     align-items: center;
